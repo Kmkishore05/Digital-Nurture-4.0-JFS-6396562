@@ -1,0 +1,39 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2025-07-05T08:49:59.807+05:30  INFO 11380 --- [  restartedMain] com.cognizant.OrmLearnApplication        : Starting OrmLearnApplication using Java 17.0.10 with PID 11380 (C:\Users\santh\eclipse-workspace\Ex4_Difference_Jpa_Hibernate\target\classes started by santh in C:\Users\santh\eclipse-workspace\Ex4_Difference_Jpa_Hibernate)
+2025-07-05T08:49:59.808+05:30 DEBUG 11380 --- [  restartedMain] com.cognizant.OrmLearnApplication        : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-07-05T08:49:59.809+05:30  INFO 11380 --- [  restartedMain] com.cognizant.OrmLearnApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-07-05T08:49:59.854+05:30  INFO 11380 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-05T08:50:00.277+05:30  INFO 11380 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-05T08:50:00.344+05:30  INFO 11380 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interface.
+2025-07-05T08:50:00.788+05:30  INFO 11380 --- [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-05T08:50:00.868+05:30  INFO 11380 --- [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-07-05T08:50:00.908+05:30  INFO 11380 --- [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-05T08:50:01.234+05:30  INFO 11380 --- [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-05T08:50:01.265+05:30  INFO 11380 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-05T08:50:01.553+05:30  INFO 11380 --- [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6dbeb12b
+2025-07-05T08:50:01.555+05:30  INFO 11380 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-05T08:50:02.460+05:30  INFO 11380 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-05T08:50:02.503+05:30  INFO 11380 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-05T08:50:02.970+05:30  INFO 11380 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-05T08:50:03.019+05:30  INFO 11380 --- [  restartedMain] com.cognizant.OrmLearnApplication        : Started OrmLearnApplication in 3.513 seconds (process running for 3.894)
+2025-07-05T08:50:03.026+05:30  INFO 11380 --- [  restartedMain] com.cognizant.OrmLearnApplication        : Inside main
+2025-07-05T08:50:03.026+05:30  INFO 11380 --- [  restartedMain] com.cognizant.OrmLearnApplication        : Start
+Hibernate: 
+    insert 
+    into
+        employee
+        (name, salary) 
+    values
+        (?, ?)
+2025-07-05T08:50:03.138+05:30  INFO 11380 --- [  restartedMain] com.cognizant.OrmLearnApplication        : End
+2025-07-05T08:50:03.146+05:30  INFO 11380 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-05T08:50:03.152+05:30  INFO 11380 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-05T08:50:03.168+05:30  INFO 11380 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
