@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Spring Learn</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #message {
+            margin-top: 20px;
+            font-size: 18px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click the Button</h1>
+    <button onclick="showWelcome()">Click Me</button>
+    <div id="message"></div>
+
+    <script>
+        function showWelcome() {
+            fetch("/welcome")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("message").innerText = data;
+                });
+        }
+    </script>
+</body>
+</html>
